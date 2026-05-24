@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import 'dotenv/config'
 
 export const dbconnection=()=>{
-     mongoose.connect(`${process.env.MONGO}/hotel-booking`)
+     mongoose.connect(`${process.env.MONGO}hotel-booking`)
         .then(() => {
             console.log("db connected")
             
