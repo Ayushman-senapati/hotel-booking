@@ -18,5 +18,8 @@ console.log("hello in serverr")
 
 //route
 app.use('/api/clerk' , clerkWebhook)
+app.get("/" , (req,res)=>{
+       res.send("hello")}
+       )
 
 app.listen(process.env.PORT)
