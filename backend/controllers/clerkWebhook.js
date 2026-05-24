@@ -17,6 +17,10 @@ export const clerkWebhook=async(req,res)=>{
         //verifying
         await whook.verify(JSON.stringify(req.body),headers)
         const {data,type}=req.body
+        console.log(data);
+            console.log(type);
+        
+        
         const userData={
             id_:data.id,
             email:data.email_addresses[0].email_address,
